@@ -57,7 +57,7 @@ const genStatusDescription = (label: Label) => {
  * generate status context from template
  */
 const genStatusContext = (label: Label) => {
-  return `label-approval/${label.name}`;
+  return `approval-label/${label.name}`;
 };
 
 /**
