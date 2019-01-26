@@ -1,26 +1,7 @@
-# working-hours
+# Approval Label
 
-> A GitHub App built with [Probot](https://github.com/probot/probot) that A Probot app
 
-## Setup
 
-```sh
-# Install dependencies
-npm install
+## Icon
 
-# Run typescript
-npm run build
-
-# Run the bot
-npm start
-```
-
-## Contributing
-
-If you have suggestions for how working-hours could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
-
-For more, check out the [Contributing Guide](CONTRIBUTING.md).
-
-## License
-
-[ISC](LICENSE) © 2019 nju33 <nju33.ki@gmail.com>
+[Figma](https://www.figma.com/file/ee0V0Kw3Pv4NkJoT6ceyqZaE/Approval-Label?node-id=0%3A1)
