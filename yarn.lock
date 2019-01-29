@@ -5228,7 +5228,7 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sqreen@^1.29.0:
+sqreen@1.29.0:
   version "1.29.0"
   resolved "https://registry.yarnpkg.com/sqreen/-/sqreen-1.29.0.tgz#6899e476eef82443fa79827929e80f3d6bb8cf9e"
   integrity sha512-CEaJ6wvsaVC27eE1veN2XxC6S+AOq0UovZBJOvA8vsLlKAK0VFqQewa61sC4SAIiQSvfGX8nDtVMm8NAiKU/Pg==
