@@ -12,13 +12,32 @@ describe('Label Approval', () => {
     probot = new Probot({id: 123, cert: 'test'});
     const app = probot.load(labelApproval);
     app.app = () => 'test';
-  });
 
-  test('create label', async done => {
+    nock.cleanAll();
+
     nock('https://api.github.com')
       .post(/app\/installations\/\d+\/access_tokens/)
       .reply(200, {token: 'test'});
 
+    nock('https://api.github.com')
+      .get(/repos\/.+\/refs\/.+/)
+      .reply(200, {
+        object: {
+          sha: 'aaa',
+        },
+      });
+
+    // ¯\_(ツ)_/¯
+    nock('https://api.github.com')
+      .get('/repos/Codertocat/Hello-World/git/refs/tags/simple-tag')
+      .reply(200, {
+        object: {
+          sha: 'aaa',
+        },
+      });
+  });
+
+  test('create label', async done => {
     nock('https://api.github.com')
       .get(/repos\/.+\/contents\/.+/)
       .reply(200, {
@@ -48,10 +67,6 @@ labels:
       .reply(201);
 
     nock('https://api.github.com')
-      .get(/repos\/.+\/refs\/.+/)
-      .reply(200);
-
-    nock('https://api.github.com')
       .get(/repos\/.+\/pulls/)
       .reply(200, [
         {
@@ -63,10 +78,6 @@ labels:
   });
 
   test('send success status', async done => {
-    nock('https://api.github.com')
-      .post(/app\/installations\/\d+\/access_tokens/)
-      .reply(200, {token: 'test'});
-
     nock('https://api.github.com')
       .get(/repos\/.+\/contents\/.+/)
       .reply(200, {
@@ -86,14 +97,6 @@ labels:
         name: 'bug',
         description: "Something isn't working",
         color: 'f29513',
-      });
-
-    nock('https://api.github.com')
-      .get(/repos\/.+\/refs\/.+/)
-      .reply(200, {
-        object: {
-          sha: 'aaa',
-        },
       });
 
     nock('https://api.github.com')
@@ -118,19 +121,15 @@ labels:
 
   test('send pending status', async done => {
     nock('https://api.github.com')
-      .post(/app\/installations\/\d+\/access_tokens/)
-      .reply(200, {token: 'test'});
-
-    nock('https://api.github.com')
       .get(/repos\/.+\/contents\/.+/)
       .reply(200, {
         content: Buffer.from(
           `
-labels:
-  - name: test
-    color: ff0000
+  labels:
+    - name: test
+      color: ff0000
 
-        `.trim(),
+          `.trim(),
         ),
       });
 
@@ -140,14 +139,6 @@ labels:
         name: 'bug',
         description: "Something isn't working",
         color: 'f29513',
-      });
-
-    nock('https://api.github.com')
-      .get(/repos\/.+\/refs\/.+/)
-      .reply(200, {
-        object: {
-          sha: 'aaa',
-        },
       });
 
     nock('https://api.github.com')
