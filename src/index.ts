@@ -1,3 +1,4 @@
+import 'sqreen';
 import {Application, Context} from 'probot';
 import {getBranchName} from './helpers/get-branch-name';
 import {PullRequestsListResponseItemLabelsItem} from '@octokit/rest';

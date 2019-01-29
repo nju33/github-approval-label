@@ -25,7 +25,8 @@
     "@types/nock": "9.3.0",
     "nock": "10.0.6",
     "probot": "7.4.0",
-    "pupa": "1.0.0"
+    "pupa": "1.0.0",
+    "sqreen": "^1.29.0"
   },
   "devDependencies": {
     "@nju33/prettier": "0.0.6",
