@@ -5180,10 +5180,10 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sqreen@1.29.3:
-  version "1.29.3"
-  resolved "https://registry.yarnpkg.com/sqreen/-/sqreen-1.29.3.tgz#b5e76044a778b28acf7590f421e18305a7e7cf27"
-  integrity sha512-WNbt8pO2K7jI0k2u2JYWoTF//FwiJqG/Lfu04twjrjdj6wmHHVFfhlCwGlORXFJP5d29f0bEksf0GEarBkPSdw==
+sqreen@1.29.4:
+  version "1.29.4"
+  resolved "https://registry.yarnpkg.com/sqreen/-/sqreen-1.29.4.tgz#ed72b8e5cadd48b0c66d89247b246f3272fc7597"
+  integrity sha512-tPvqLHeMI5GpD23b2gqBxDQ0oWRkt+42ZCuVzJeiSohQbRfr9nXiL77ZhN+813cz7NJKDCG234cvReamPqrqLw==
   dependencies:
     cls-bluebird "^2.0.1"
     commander "^2.18.0"
