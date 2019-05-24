@@ -5179,10 +5179,10 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sqreen@1.30.2:
-  version "1.30.2"
-  resolved "https://registry.yarnpkg.com/sqreen/-/sqreen-1.30.2.tgz#c21e9fa2ddc4d1fc12112c7d0fb36008f4a5757f"
-  integrity sha512-RD6my6WsZbgzMD4cXWPzdu6rsDJwVXiKee3tcbaAZY2kmcTPFCD4mR7CmgKq2t2qzsOiKvv4HbbZc5e1NQEb6Q==
+sqreen@1.30.3:
+  version "1.30.3"
+  resolved "https://registry.yarnpkg.com/sqreen/-/sqreen-1.30.3.tgz#cd1571baba03ead201776b44861db875d30e99d6"
+  integrity sha512-XngBnacpfRBv6p43m6ajK3Xf4KDJSnbuwJDeCzWkXia5TrOdrs38v+E/qAyfxZoMCG0gV3BnS0RJW2TQQgGo6g==
   dependencies:
     async-listener "^0.6.0"
     cls-bluebird "^2.0.1"
